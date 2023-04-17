@@ -1,0 +1,262 @@
+body {
+    font-family: 'Roboto', helvetica, arial, sans-serif;
+    color: #252525;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 15% 25px 15%;
+}
+
+.menu {
+    display: flex;
+    width: 80%;
+    justify-content: flex-end;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+}
+
+.menu p {
+    padding: 0px 0px 0px 25px;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+}
+
+.logo {
+    display: flex;
+    width: 20%;
+    justify-content: flex-start;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 15%;
+    height: fit-content;
+}
+
+.leftside {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    width: min-content;
+    margin-top: 11px;
+}
+
+.leftside h2 {
+    padding-top: 30px;
+}
+
+.leftside h3 {
+    padding-top: 30px;
+}
+
+.rightside {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+#myphoto {
+    width: 286px;
+    height: 260px;
+}
+
+.icon {
+    display: flex;
+    margin: 3%;
+    justify-content: space-around;
+    padding-top: 30px;
+
+}
+
+.rightside img {
+    padding: 10px;
+}
+
+.footer {
+    margin: 0 15%;
+}
+
+/*Project page*/
+
+.background {
+    background-color: #E8F0FD;
+}
+
+.overview {
+    margin: 0 8%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas:
+        "toprow toprow "
+        "downleftside downrightside "
+    ;
+}
+.overview img{
+    width: 997px;
+    height: 451px;
+    }
+
+.toprow {
+    grid-area: toprow;
+    display: flex;
+
+}
+
+.downleftside{
+    grid-area: downleftside;
+    display: flex;
+    align-items: center;
+}
+
+.downrightside {
+    grid-area: downrightside;
+    width: 979px;
+    height: 451px;
+    display: flex;
+    justify-items: end;
+}
+.Frame1{
+    margin: 35px 8%;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.Frame1 h3{
+    line-height: 33px;
+}
+
+.huristicgrid{
+    display: grid;
+    grid-template-columns: 25% 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "navm Huristicimg Huristicimg"
+    "sebar Huristicimg Huristicimg"
+    "chat signin links"
+    ;
+}
+/* doesn't work */
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+/* -------------- */
+}
+.navm{
+  grid-area: navm; 
+}
+
+.sebar{
+    grid-area: sebar;  
+  }
+.chat{
+    grid-area: chat;  
+  }
+.signin{
+    grid-area: signin;  
+  }
+.links{
+    grid-area: links;  
+  }
+.Huristicimg{
+    grid-area: Huristicimg;
+}
+.huristicgrid h4{
+color: #FB0505; 
+}
+.usabilityresult{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 170px;
+background: #E8F0FD;
+}
+.cardsort{
+    display: flex;
+    justify-content: center;
+}
+.rn{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+/* Typography CSS */
+
+.h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    font-style: normal;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 38px;
+    margin: 0px 0px;
+    line-height: 45px;
+    font-style: normal;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 28px;
+    margin: 0px 0px;
+    line-height: 33px;
+    font-style: normal;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 21px;
+    font-style: normal;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+}
+.mood{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "moodleft moodright"
+    ;
+    justify-content: center;
+    justify-items: center;
+}
+.moodleft{
+    grid-area: moodleft;
+}
+
+.moodright{
+grid-area: moodright;
+}
+.cardsort{
+    display: flex;
+}
+
+
+@media only screen and (max-width: 1000px) {}
+
+@media only screen and (max-width: 600px) {}
