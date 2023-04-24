@@ -24,7 +24,7 @@ body {
 }
 
 .menu p {
-    padding: 0px 0px 0px 25px;
+    padding: 0px 15px 0px 15px;
     font-weight: 700;
     font-size: 21px;
     line-height: 25px;
@@ -34,6 +34,32 @@ body {
     display: flex;
     width: 20%;
     justify-content: flex-start;
+}
+
+.spin {
+    animation: spin ease-in-out 7s 2 alternate;
+    /*animation-direction: alternate; 
+    animation-timing-function:ease-in-out ;*/
+
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.Menuitems:hover {
+    border-style: none none solid none;
+    border-color: darkgray;
+    cursor: pointer;
 }
 
 .main {
@@ -66,6 +92,11 @@ body {
     display: flex;
     flex-direction: column;
     height: fit-content;
+}
+
+.rightside p {
+    width: 792px;
+    height: 575px;
 }
 
 #myphoto {
@@ -105,10 +136,11 @@ body {
         "downleftside downrightside "
     ;
 }
-.overview img{
+
+.overview img {
     width: 997px;
     height: 451px;
-    }
+}
 
 .toprow {
     grid-area: toprow;
@@ -116,7 +148,7 @@ body {
 
 }
 
-.downleftside{
+.downleftside {
     grid-area: downleftside;
     display: flex;
     align-items: center;
@@ -129,75 +161,145 @@ body {
     display: flex;
     justify-items: end;
 }
-.Frame1{
+
+.Frame1 {
     margin: 35px 8%;
     padding-top: 25px;
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
-.Frame1 h3{
+
+.Frame1 h3 {
     line-height: 33px;
 }
 
-.huristicgrid{
+.huristicgrid {
     display: grid;
     grid-template-columns: 25% 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "navm Huristicimg Huristicimg"
-    "sebar Huristicimg Huristicimg"
-    "chat signin links"
+    grid-template-areas:
+        "navm Huristicimg Huristicimg"
+        "sebar Huristicimg Huristicimg"
+        "chat signin links"
     ;
 }
+
 /* doesn't work */
 .item {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 33%;
-/* -------------- */
-}
-.navm{
-  grid-area: navm; 
+    /* -------------- */
 }
 
-.sebar{
-    grid-area: sebar;  
-  }
-.chat{
-    grid-area: chat;  
-  }
-.signin{
-    grid-area: signin;  
-  }
-.links{
-    grid-area: links;  
-  }
-.Huristicimg{
+.navm {
+    grid-area: navm;
+}
+
+.sebar {
+    grid-area: sebar;
+}
+
+.chat {
+    grid-area: chat;
+}
+
+.signin {
+    grid-area: signin;
+}
+
+.links {
+    grid-area: links;
+}
+
+.Huristicimg {
     grid-area: Huristicimg;
 }
-.huristicgrid h4{
-color: #FB0505; 
+
+.huristicgrid h4 {
+    color: #FB0505;
 }
-.usabilityresult{
-display: flex;
-justify-content: center;
-align-items: center;
-height: 170px;
-background: #E8F0FD;
+
+.usabilityresult {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+    background: #E8F0FD;
 }
-.cardsort{
+
+.cardsort {
     display: flex;
     justify-content: center;
 }
-.rn{
+
+.rn {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     flex-direction: row;
     align-items: center;
-    
+
 }
+
+/*AboutMe */
+.AboutMe {
+    margin: 0 15% 25px 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: max-content;
+    gap: 10px;
+    grid-template-areas:
+        "aboutmeimg aboutmecontent aboutmecontent"
+        "education experience skills"
+        "aboutmeicon 1fr 1fr"
+    ;
+}
+
+.aboutmeimg {
+    grid-area: aboutmeimg;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+
+}
+
+.aboutmecontent {
+    grid-area: aboutmecontent;
+    margin-left: 1.33em;
+}
+
+.education {
+    grid-area: education;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+
+}
+
+.experience {
+    grid-area: experience;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.skills {
+    grid-area: skills;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+
+}
+
+.aboutmeicon {
+    grid-area: aboutmeicon;
+    display: flex;
+    padding: 5%;
+    justify-content: space-around;
+
+}
+
 
 /* Typography CSS */
 
@@ -236,23 +338,26 @@ p {
     line-height: 20px;
     font-style: normal;
 }
-.mood{
+
+.mood {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "moodleft moodright"
+    grid-template-areas:
+        "moodleft moodright"
     ;
     justify-content: center;
     justify-items: center;
 }
-.moodleft{
+
+.moodleft {
     grid-area: moodleft;
 }
 
-.moodright{
-grid-area: moodright;
+.moodright {
+    grid-area: moodright;
 }
-.cardsort{
+
+.cardsort {
     display: flex;
 }
 
