@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     margin: 0 15% 25px 15%;
 }
 
@@ -21,6 +22,10 @@ body {
     font-weight: 700;
     font-size: 21px;
     line-height: 25px;
+}
+.menu a{
+text-decoration: none;
+color:#252525 ;
 }
 
 .menu p {
@@ -38,10 +43,6 @@ body {
 
 .spin {
     animation: spin ease-in-out 7s 2 alternate;
-    /*animation-direction: alternate; 
-    animation-timing-function:ease-in-out ;*/
-
-
 }
 
 @keyframes spin {
@@ -88,6 +89,16 @@ body {
 .leftside h3 {
     padding-top: 30px;
 }
+
+.leftsidemobile{
+    display: flex;
+    
+}
+.intromobile{
+    flex-direction: column;
+}
+
+
 
 .rightside {
     display: flex;
@@ -264,10 +275,6 @@ height: 290px;
 #p4{
     background-color:#FCE8E6;
 }
-
-
-   
-
 /*AboutMe */
 .AboutMe {
     margin: 0 15% 25px 15%;
@@ -386,7 +393,40 @@ p {
     display: flex;
 }
 
+@media only screen and (max-width: 1000px) {
+    .menu {
+        display: none;
+    }
+    .leftside{
+        display:none;
+    }
+}
+@media only screen and (min-width: 1001px) {
+    .hmenu {
+        display: none;
+    }
+    .leftsidemobile{
+        display: none;
+    }
+      
+    }
+    @media only screen and (max-width: 1280px) {
+        .AboutMe {
+            margin: 0 15% 25px 15%;
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: max-content;
+            gap: 10px;
+            grid-template-areas:
+                "aboutmecontent aboutmecontent"
+                "aboutmeimg aboutmeimg"
+                "education experience"
+                "skills aboutmeicon"
+            ;
+           
+        }
+       
+          
+        }
 
-@media only screen and (max-width: 1000px) {}
 
-@media only screen and (max-width: 600px) {}
