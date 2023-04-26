@@ -152,12 +152,12 @@ body {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     margin: 10px 2px;
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
+
 }
 #button:hover {
     box-shadow: 0 12px 10px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.10);
@@ -319,15 +319,13 @@ body {
     grid-template-areas:
         "aboutmeimg aboutmecontent aboutmecontent"
         "education experience skills"
-        "aboutmeicon 1fr 1fr"
+        "buttoncontainer1 buttoncontainer2 buttoncontainer3"
     ;
 }
 
 .aboutmeimg {
     grid-area: aboutmeimg;
-    margin-top: 1.33em;
-    margin-bottom: 1.33em;
-
+    margin: 1.33em auto 1.33em auto;
 }
 
 .aboutmecontent {
@@ -358,14 +356,27 @@ body {
 
 }
 
-.aboutmeicon {
-    grid-area: aboutmeicon;
-    display: flex;
-    padding: 5%;
-    justify-content: space-around;
-
+.buttoncontainer1 {
+    grid-area: buttoncontainer1;
 }
-
+.buttoncontainer2 {
+    grid-area: buttoncontainer2;
+}
+.buttoncontainer3 {
+    grid-area: buttoncontainer3;
+}
+.buttoncontainer1 a{
+    text-decoration: none;
+    color: #252525;
+}
+.buttoncontainer2 a{
+    text-decoration: none;
+    color: #252525;
+}
+.buttoncontainer3 a{
+    text-decoration: none;
+    color: #252525;
+}
 
 /* Typography CSS */
 
@@ -463,7 +474,9 @@ p {
             "aboutmecontent aboutmecontent"
             "aboutmeimg aboutmeimg"
             "education experience"
-            "skills aboutmeicon"
+            "skills buttoncontainer1"
+            "skills buttoncontainer2"
+            "skills buttoncontainer3"
         ;
 
     }
