@@ -17,15 +17,14 @@ body {
     justify-content: flex-end;
     font-family: 'Roboto';
     font-style: normal;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 21px;
     line-height: 25px;
 }
-.menu a{
-text-decoration: none;
-color:#252525 ;
+
+.menu a {
+    text-decoration: none;
+    color: #252525;
 }
 
 .menu p {
@@ -69,7 +68,7 @@ color:#252525 ;
     justify-content: space-around;
     margin: 0 15%;
     height: fit-content;
-    
+
 }
 
 .leftside {
@@ -90,12 +89,25 @@ color:#252525 ;
     padding-top: 30px;
 }
 
-.leftsidemobile{
+.leftsidemobile {
     display: flex;
-    
-}
-.intromobile{
     flex-direction: column;
+
+}
+
+.intromobile {
+    flex-direction: column;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.intromobileimg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.intromobileimg h2 {
+    margin: auto;
 }
 
 
@@ -116,13 +128,40 @@ color:#252525 ;
     height: 260px;
 }
 
-.icon {
+.buttoncontainer {
     display: flex;
-    margin: 3%;
-    justify-content: space-around;
-    padding-top: 30px;
-
+    flex-direction: column;
+    width: 100%;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
 }
+
+.buttoncontainer a {
+    text-decoration: none;
+    color: #252525;
+    padding: 0px 15px 0px 15px;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+}
+
+#button {
+    border:2px solid #252525;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+#button:hover {
+    box-shadow: 0 12px 10px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.10);
+  }
 
 .rightside img {
     padding: 10px;
@@ -197,15 +236,6 @@ color:#252525 ;
     ;
 }
 
-/* doesn't work */
-.item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 33%;
-    /* -------------- */
-}
-
 .navm {
     grid-area: navm;
 }
@@ -264,17 +294,21 @@ color:#252525 ;
     height: fit-content;
     gap: 1rem;
 }
-.Projects div{
 
-width: 674px;
-height: 290px;
+.Projects div {
+
+    width: 674px;
+    height: 290px;
 }
-#p3{
-    background-color:#FEF7DF;
+
+#p3 {
+    background-color: #FEF7DF;
 }
-#p4{
-    background-color:#FCE8E6;
+
+#p4 {
+    background-color: #FCE8E6;
 }
+
 /*AboutMe */
 .AboutMe {
     margin: 0 15% 25px 15%;
@@ -397,36 +431,42 @@ p {
     .menu {
         display: none;
     }
-    .leftside{
-        display:none;
+
+    .leftside {
+        display: none;
+    }
+    .buttoncontainer{
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
+
 @media only screen and (min-width: 1001px) {
     .hmenu {
         display: none;
     }
-    .leftsidemobile{
+
+    .leftsidemobile {
         display: none;
     }
-      
+
+}
+
+@media only screen and (max-width: 1280px) {
+    .AboutMe {
+        margin: 0 15% 25px 15%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: max-content;
+        gap: 10px;
+        grid-template-areas:
+            "aboutmecontent aboutmecontent"
+            "aboutmeimg aboutmeimg"
+            "education experience"
+            "skills aboutmeicon"
+        ;
+
     }
-    @media only screen and (max-width: 1280px) {
-        .AboutMe {
-            margin: 0 15% 25px 15%;
-            display: grid;
-            grid-template-columns: 1fr 1fr ;
-            grid-template-rows: max-content;
-            gap: 10px;
-            grid-template-areas:
-                "aboutmecontent aboutmecontent"
-                "aboutmeimg aboutmeimg"
-                "education experience"
-                "skills aboutmeicon"
-            ;
-           
-        }
-       
-          
-        }
 
 
+}
