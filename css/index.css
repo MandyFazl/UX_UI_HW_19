@@ -65,7 +65,7 @@ body {
 .main {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 15%;
     height: fit-content;
 
