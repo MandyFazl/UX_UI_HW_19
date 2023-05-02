@@ -1,8 +1,14 @@
-// Use jQuery to target the <h1> tag and make it red.
-$("h1").css("color", "red");
 
-// Use jQuery to target the blue class and make it blue.
-$(".blue").css("color", "blue");
 
-// Use jQuery to target the addMe ID and change its HTML to Hello.
-$("#addMe").html('Hello');
+function hopen(){
+document.getElementById("dropdownmenu").style.display="block";
+document.getElementById("Hambergermenu").style.display="none";
+document.getElementById("xmark").style.display="block";
+}
+
+function hclose(){
+    document.getElementById("dropdownmenu").style.display="none";
+    document.getElementById("xmark").style.display="none";
+    document.getElementById("Hambergermenu").style.display="block";
+}
+

@@ -13,16 +13,15 @@
   <!--Icons fontawesome.com-->
   <script src="https://kit.fontawesome.com/7d65b0569c.js" crossorigin="anonymous"></script>
   <!---->
-  <header>
+  <header class="header">
     <div class="nav">
       <div class="logo"><a href="index.html"><img src="images\image 5.png" alt="Mandy Fazl"></a></div>
       <div class="menu">
         <div class="Menuitems">
           <p id="item"><a href="AboutMe.html">About Me</a></p>
         </div>
-
         <div class="Menuitems">
-          <p id="item"><a href="Projects.html">projects</a></p>
+          <p id="item"><a href="Projects.html">Projects</a></p>
         </div>
         <div class="Menuitems">
           <p id="item">Resume</p>
@@ -31,10 +30,26 @@
           <p id="item">Contact</p>
         </div>
       </div>
-      <div class="hmenu"><i class="fa-solid fa-bars" style="color: #434343;"></i>
+      <div id="Hambergermenu" class="hmenu"><a href="javascript:void(0)" onclick="hopen()"><i class="fa-solid fa-bars fa-2xl" style="color: #434343;"></i></a>
+      </div>
+      <div id="xmark" class="hmenu" style="display: none;"><a href="javascript:void(0)" onclick="hclose()"><i class="fa-solid fa-xmark fa-2xl" style="color: #434343;"></i></a>
+      </div>
+      
+    </div>
+    <div id="dropdownmenu">
+      <div class="Menuitems">
+        <p id="item"><a href="AboutMe.html">About Me</a></p>
+      </div>
+      <div class="Menuitems">
+        <p id="item"><a href="Projects.html">Projects</a></p>
+      </div>
+      <div class="Menuitems">
+        <p id="item">Resume</p>
+      </div>
+      <div class="Menuitems">
+        <p id="item">Contact</p>
       </div>
     </div>
-
   </header>
 
 
