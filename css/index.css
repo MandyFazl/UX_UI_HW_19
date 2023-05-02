@@ -42,11 +42,30 @@ body {
 
 #dropdownmenu {
     z-index: 2;
-    float: right;
-    padding-right: 10%;
-    position: relative;
+    position:absolute;
+    right: 6rem;
+    top:4.5rem;
     display: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+}
+.dropMenuitems a {
+    text-decoration: none;
+    color: #252525;
+}
 
+.dropMenuitems {
+    background-color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 .logo {
@@ -68,7 +87,6 @@ body {
         transform: rotate(360deg);
     }
 }
-
 
 
 .Menuitems:hover {
@@ -114,7 +132,7 @@ body {
 
 .intromobile {
     flex-direction: column;
-    margin: 1.5rem 0 1.5rem 0;
+    margin: 2rem;
 }
 
 .intromobileimg {
@@ -185,11 +203,20 @@ body {
     padding: 0.5rem;
 }
 
+.projectscontainer{
+    margin: auto;
+}
 .projectscontainer p {
     padding-left: 4.5rem;
     
 }
-
+.projectscontainer h2 {
+font-weight: 400;
+font-size: 28px;
+margin: 0px 0px;
+line-height: 33px;
+font-style: normal;
+}
 .projectscontainer h3 {
     padding-left: 4rem;
     padding-top: 6rem;
@@ -201,6 +228,7 @@ body {
     width: 674px;
     height: 290px;
     margin-bottom: 1rem;
+    margin-top: 1rem;
 
 }
 .CFprojectcontainer{
@@ -382,7 +410,7 @@ body {
     grid-area: education;
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    padding: 5% 15%;
 
 }
 
@@ -390,27 +418,30 @@ body {
     grid-area: experience;
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    padding: 5% 15%;
 }
 
 .skills {
     grid-area: skills;
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    padding: 5% 15%;
 
 }
 
 .buttoncontainer1 {
     grid-area: buttoncontainer1;
+    padding: 5% 15%;
 }
 
 .buttoncontainer2 {
     grid-area: buttoncontainer2;
+    padding: 5% 15%;
 }
 
 .buttoncontainer3 {
     grid-area: buttoncontainer3;
+    padding: 5% 15%;
 }
 
 .buttoncontainer1 a {
@@ -509,7 +540,7 @@ p {
 
 @media only screen and (min-width: 1001px) {
     .hmenu {
-        display: none;
+        display: none !important;
     }
 
     .intromobile {
@@ -525,6 +556,7 @@ p {
 @media only screen and (max-width: 1280px) {
     .AboutMe {
         margin: 0 15% 25px 15%;
+        padding-top: 1rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: max-content;
