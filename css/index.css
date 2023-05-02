@@ -94,18 +94,19 @@ body {
 .leftside {
     font-family: 'Roboto';
     width: min-content;
-    padding: 0.5rem;
-}
+    padding: 1rem 2rem 1rem 1rem;
+    }
+    
 
 .leftside h2 {
-    padding-top: 30px;
+    padding-top: 2rem;
 }
 
 .leftside h3 {
-    padding-top: 30px;
+    padding-top: 2rem;
 }
 
-.leftsidemobile {
+.intromobile {
     display: flex;
     flex-direction: column;
 
@@ -132,16 +133,10 @@ body {
     display: flex;
     flex-direction: column;
     height: fit-content;
+    margin: 1rem;
 }
 
-.rightside p {
-    padding-left: 4.5rem;
-}
 
-.rightside h3 {
-    padding-left: 4rem;
-    padding-top: 6rem;
-}
 
 #myphoto {
     width: 286px;
@@ -155,7 +150,7 @@ body {
     font-weight: 700;
     font-size: 21px;
     line-height: 25px;
-    padding-top: 1rem;
+    padding-top: 2.5rem;
 }
 
 .buttoncontainer a {
@@ -190,13 +185,22 @@ body {
     padding: 0.5rem;
 }
 
+.projectscontainer p {
+    padding-left: 4.5rem;
+    
+}
+
+.projectscontainer h3 {
+    padding-left: 4rem;
+    padding-top: 6rem;
+}
 .CRAprojectcontainer {
     background-image: url(../images/p3back.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 674px;
     height: 290px;
-    margin: 0.5rem;
+    margin-bottom: 1rem;
 
 }
 .CFprojectcontainer{
@@ -205,7 +209,7 @@ body {
     background-repeat: no-repeat;
     width: 674px;
     height: 290px;
-    margin: 0.5rem;
+    margin-bottom: 1rem;
 }
 .thirdprojectcontainer{
     background-image: url(../images/p1.png);
@@ -213,7 +217,7 @@ body {
     background-repeat: no-repeat;
     width: 674px;
     height: 290px;
-    margin: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .footer {
@@ -339,23 +343,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 15%;
-    height: fit-content;
-    gap: 1rem;
-}
 
-.Projects div {
-
-    width: 674px;
-    height: 290px;
-}
-
-#p3 {
-    background-color: #FEF7DF;
 }
 
 #p4 {
     background-color: #FCE8E6;
+}
+.Projects a {
+    text-decoration: none;
+    color: #252525;
 }
 
 /*AboutMe */
@@ -516,7 +512,7 @@ p {
         display: none;
     }
 
-    .leftsidemobile {
+    .intromobile {
         display: none;
     }
 
